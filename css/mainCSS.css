@@ -1,0 +1,299 @@
+html {
+    font-size: 62.5%;
+}
+
+/* variables */
+:root {
+    --primaryColor: #3A3A3A;
+    --secondaryColor: #A3C145;
+    --tertiaryColor: #C2C2C2;
+    --borderColor: #707070;
+    --bgColor: #FCFCFC;
+    --temporaryColor: #f70909;
+    --contentWidth: 1640px;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext');
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+}
+
+.uppertext {
+    text-transform: uppercase;
+}
+
+.datecaption {
+    font-size: 1.4rem;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+.orangetext {
+    color: #EC9B20;
+}
+
+/* buttons */
+.btn {
+    text-align: center;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn--100 {
+    width: 230px;
+    height: 62px;
+    border: solid 2px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.btn--200 {
+    width: 263px;
+    height: 82px;
+    border: solid 1px;
+    font-size: 2rem;
+    line-height: 7rem;
+}
+
+.btn--300 {
+    width: 398px;
+    height: 86px;
+    font-size: 2.5rem;
+    line-height: 7rem;
+}
+
+.btn--400 {
+    width: 410px;
+    height: 110px;
+    border: solid 2px;
+    font-size: 2.1rem;
+    line-height: 3rem;
+}
+
+.btn--white {
+    background-color: #FFFFFF;
+    border-color: var(--secondaryColor);
+    color: var(--secondaryColor);
+}
+
+.btn--green {
+    background-color: var(--secondaryColor);
+    border-color: var(--borderColor);
+    color: #FFFFFF;
+}
+
+/* styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bgColor);
+}
+
+.header {
+    background-color: var(--primaryColor);
+    height: 80px;
+}
+
+.header .contact__header {
+    width: 100%;
+    max-width: var(--contentWidth);
+    /* background-color: var(--temporaryColor); */
+    margin: 0 auto;
+}
+
+.header .contact__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header .contact__header ul {
+    display: flex;
+    color: var(--tertiaryColor);
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.header .contact__header ul:first-child {
+    margin: 0 0 0 30px;
+}
+
+.header .contact__header ul:first-child li:first-child,
+.header .contact__header ul:first-child li:last-child {
+    position: relative;
+    margin-right: 47px
+}
+
+.header .contact__header ul:first-child li:first-child::before,
+.header .contact__header ul:first-child li:last-child::before {
+    content: '';
+    width: 111px;
+    height: 111px;
+    position: absolute;
+    top: 4px;
+    left: -18px;
+}
+
+.header .contact__header ul:first-child li:first-child::before {
+
+    background: url('img/icon/ic_call_24px.svg') no-repeat;
+    background-size: 11px;
+}
+
+.header .contact__header ul:first-child li:last-child::before {
+
+    background: url('img/icon/ic_mail_outline_24px.svg') no-repeat;
+    background-size: 14px;
+}
+
+.header .contact__header ul:last-child li {
+    position: relative;
+    margin-right: 4px
+}
+
+.header .contact__header ul:last-child li::after {
+    content: '|';
+    margin: 0 0 0 4px;
+}
+
+.header .contact__header ul:last-child li:last-child::after {
+    content: '';
+}
+
+.header .header__navigation {
+    width: 100%;
+    max-width: var(--contentWidth);
+    height: 111px;
+    border: solid 1px var(--borderColor);
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.header .header__navigation .navigation__logo--small {
+    width: 93px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+}
+
+.header .header__navigation .navigation__elements {
+    height: 111px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 980px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+}
+
+.header .header__navigation .navigation__elements a,
+.header .header__navigation .navigation__elements a:visited {
+    color: var(--primaryColor);
+    position: relative;
+    transition: 800ms;
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -ms-transition: 800ms;
+    -o-transition: 800ms;
+}
+
+.header .header__navigation .navigation__elements a:hover {
+    color: var(--secondaryColor);
+
+}
+
+.header .header__navigation .navigation__elements a::before {
+    content: '';
+    width: 0;
+    border-bottom: solid 1px var(--secondaryColor);
+    position: absolute;
+    bottom: 0px;
+    transition: 800ms;
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -ms-transition: 800ms;
+    -o-transition: 800ms;
+}
+
+.header .header__navigation .navigation__elements a:hover::before {
+    content: '';
+    width: 100%;
+}
+
+.intro {
+    background: url(img/h2.jpg) no-repeat center bottom;
+    height: calc(100vh - 80px);
+}
+
+.intro .intro__content {
+    width: 100%;
+    max-width: var(--contentWidth);
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro .intro__content .intro__content__text {
+    position: absolute;
+    right: 76px;
+    bottom: 540px;
+    text-align: right;
+    line-height: 7rem;
+}
+
+.intro .intro__content .intro__content__buttons {
+    width: 100%;
+    position: absolute;
+    right: 76px;
+    bottom: 407px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.intro .intro__content .intro__content__buttons button:last-child {
+    margin: 0 0 0 35px;
+}

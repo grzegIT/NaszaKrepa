@@ -264,7 +264,7 @@ body {
 }
 
 .intro {
-    background: url(img/h2.jpg) no-repeat center bottom;
+    background: url(../img/h2.jpg) no-repeat center bottom;
     height: calc(100vh - 80px);
 }
 

@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26.616" height="26.616" viewBox="0 0 26.616 26.616">
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="12" viewBox="0 0 26.616 26.616">
   <defs>
     <style>
       .cls-1 {
-        fill: #a3c145;
+        fill: red;
+      
       }
     </style>
   </defs>
